@@ -7,7 +7,7 @@
 - 개인 저장소명:llm-data-analysis-course
 - 작성일:2026-09-04
 - 사용 LLM:ChatGPT
-- 최종 제출 URL:
+- 최종 제출 URL:https://github.com/wjs0951467-wq/llm-data-analysis-course/blob/main/chapter01/chapter01.md
 
 ---
 
