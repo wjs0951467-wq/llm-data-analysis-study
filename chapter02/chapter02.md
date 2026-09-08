@@ -69,8 +69,8 @@ Python과 Git이 정상적으로 실행되는 것은 확인했지만, 아직 프
 ### 핵심 실행 결과
 
 ```text
-현재 프로젝트 경로:C:\dev\llm-data-analysis-course
-터미널 Python 실행 파일:C:\dev\llm-data-analysis-course\.venv\Scripts\python.exe
+현재 프로젝트 경로:C:\dev\llm-data-analysis-study
+터미널 Python 실행 파일:C:\dev\llm-data-analysis-study\.venv\Scripts\python.exe
 가상환경 활성화 여부:활성화O/터미널에 (.venv) 표시
 패키지 설치 결과:설치완료
 ```
@@ -103,8 +103,8 @@ Python과 Git이 정상적으로 실행되는 것은 확인했지만, 아직 프
 
 ```text
 VS Code Python 인터프리터:.venv (3.14.6.final.0) (Python 3.14.6)
-Notebook sys.executable:C:\dev\llm-data-analysis-course\.venv\Scripts\python.exe
-Notebook Path.cwd():C:\dev\llm-data-analysis-course\notebooks
+Notebook sys.executable:C:\dev\llm-data-analysis-study\.venv\Scripts\python.exe
+Notebook Path.cwd():C:\dev\llm-data-analysis-study\notebooks
 ```
 
 ### Evidence
