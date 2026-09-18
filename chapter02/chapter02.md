@@ -6,14 +6,14 @@
 
 - 이름:전예진
 - GitHub ID:wjs0951467-wq
-- 개인 저장소: `llm-data-analysis-study`
+- 개인 저장소: `llm-data-analysis-course`
 - 작성일:2026-09-04
 - 운영체제:Windows 11
 
 ### 최종 제출 URL
 
 ```text
-https://github.com/wjs0951467-wq/llm-data-analysis-study/blob/main/chapter02/chapter02.md
+https://github.com/wjs0951467-wq/llm-data-analysis-course/blob/main/chapter02/chapter02.md
 ```
 
 ---
