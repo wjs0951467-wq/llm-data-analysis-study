@@ -1,0 +1,12 @@
+﻿no,출처,제안/주장,검증 코드·수치,실제 결과,최종 판단,사람 확인
+1,이전 제안(제안 주체 미확인),주문 상태 컬럼은 status다,pd.read_csv(nrows=0).columns,"status 없음, order_status 존재 — 최초 검사 중단 후 수정",수정 후 사용,완료(사용자 기록)
+2,Claude(이번 세션),세 테이블의 기본키는 고유하다,duplicated().sum(),"orders.order_id=0, order_items.order_item_id=0, products.product_id=0",사용,review_required
+3,Claude(이번 세션),order_items→orders는 m:1로 병합하고 행 수가 유지된다,"merge(validate='m:1', indicator) / len 비교","752→752행, 주문 미연결 2행 (922,000) 별도 보고",사용,review_required
+4,전처리 관계 점검(전체 기준),상품 미연결 26행을 completed 범위에도 그대로 적용한다,completed 범위 products merge indicator,"전체 26행 vs completed 16행 (4,015,000)",수정 후 사용(범위별 재계산),review_required
+5,Claude(이번 세션),카테고리 미연결 금액은 별도 행으로 분모에 포함한다,share_pct = amount / completed 전체 금액,미연결 비중 2.84%,사용(분모 정의는 사람 결정),review_required
+6,Claude(이번 세션),line_total = quantity × unit_price,"np.isclose(amount, line_total)","전체 불일치 0/752, completed 불일치 0/446",사용,review_required
+7,Claude(이번 세션),source total과 group total이 같고 비중 합계는 100%다,total_checks,"141,340,000 = 141,340,000, 비중 합계 100.000000",사용,review_required
+8,공통 Safe Context,category 고유값 10개를 그대로 카테고리로 사용한다,"str.replace(r'\s+', '') 후 nunique",원 표기 10개 → 공백 제거 7개(표기 변형 3개),수정 후 사용(공백 제거 표기 + 원 표기 보관),review_required
+9,Claude(이번 세션),극단 수량 행은 삭제하지 않고 영향만 보고한다,quantity > 10 제외 시 비중 비교,completed 1행; 1위 패션 23.31% → 20.61%,사용(제외 여부는 보류),review_required
+10,검토용 가정,unit_price 대신 products.price를 써도 같다,"np.isclose(unit_price, price)",상품 연결 행 중 8행 불일치,보류(unit_price 유지),review_required
+11,검토용 원인 주장 예시,카테고리 간 금액 차이는 고객 선호·가격 정책 때문이다,원인 변수(선호·가격 정책·노출) 존재 여부,현재 데이터에 원인 변수 없음 — 검증 불가,보류(가설),review_required
