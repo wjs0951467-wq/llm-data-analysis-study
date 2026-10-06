@@ -1,1 +1,1 @@
-# llm-data-analysis-course
+# llm-data-analysis-study
