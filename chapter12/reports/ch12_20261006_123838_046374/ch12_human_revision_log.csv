@@ -1,0 +1,2 @@
+﻿recorded_at,review_target,decision_draft,human_review_status,revision_status,execution_approved,limited_execution
+2026-10-06T10:54:58,DEFAULT_STATIC_SCAN_EXAMPLE,BLOCK,판단 초안 — 사람이 근거 확인 필요,NOT_REVISED,False,NOT_RUN

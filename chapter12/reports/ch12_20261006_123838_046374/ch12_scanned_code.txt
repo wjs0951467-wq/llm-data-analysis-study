@@ -1,0 +1,4 @@
+import requests
+
+response = requests.get("https://example.com/data.csv")
+open("download.csv", "wb").write(response.content)

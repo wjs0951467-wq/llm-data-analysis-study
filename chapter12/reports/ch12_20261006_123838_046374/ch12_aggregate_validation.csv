@@ -1,0 +1,8 @@
+﻿검증 항목,문제 건수,결과
+line_total 불일치,0,PASS
+상품 merge 행 수 차이,0,PASS
+주문 merge 행 수 차이,0,PASS
+상품 미매칭,0,PASS
+주문 미매칭,0,PASS
+카테고리 결측 또는 빈 값,0,PASS
+집계 대상 날짜 결측,0,PASS

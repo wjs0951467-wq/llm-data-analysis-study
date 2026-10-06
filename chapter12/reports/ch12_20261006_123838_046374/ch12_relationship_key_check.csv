@@ -1,0 +1,10 @@
+﻿성공 기준,검증 대상,문제 건수,결과
+④ 부모 키 고유성,customers.customer_id,0,PASS
+④ 부모 키 고유성,orders.order_id,0,PASS
+④ 부모 키 고유성,products.product_id,0,PASS
+⑤ FK 결측,orders.customer_id,0,PASS
+⑥ FK 미매칭,orders.customer_id,0,PASS
+⑤ FK 결측,order_items.order_id,0,PASS
+⑥ FK 미매칭,order_items.order_id,0,PASS
+⑤ FK 결측,order_items.product_id,0,PASS
+⑥ FK 미매칭,order_items.product_id,0,PASS

@@ -1,0 +1,2 @@
+﻿recorded_at,target,execution_approved,execution_decision,run_status,reason,start_time,end_time,exit_code,post_execution_evidence
+2026-10-06T11:00:08,DEFAULT_STATIC_SCAN_EXAMPLE,False,DO_NOT_EXECUTE,NOT_RUN,실행 승인 없음 또는 Execution Gate 차단 사유 존재,,,,실행하지 않아 수집하지 않음

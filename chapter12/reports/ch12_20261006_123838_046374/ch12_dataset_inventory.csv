@@ -1,0 +1,5 @@
+﻿데이터,최초_행수,STEP2_행수,STEP3_행수,컬럼
+customers,150,150,150,"customer_id, name, gender, age, city, signup_date"
+products,100,100,100,"product_id, product_name, category, price"
+orders,300,298,295,"order_id, customer_id, order_date, payment_method, order_status, order_month, order_dayofweek"
+order_items,752,745,736,"order_item_id, order_id, product_id, quantity, unit_price, line_total"

@@ -1,0 +1,7 @@
+﻿검증 축,상태,Evidence
+schema_and_keys,PASS,STEP 2: FK 문제 행을 제외한 검증용 복사본 재검증
+aggregate_validation,PASS,STEP 3: 날짜가 있는 completed 주문의 동일 범위 총합 대조
+ml_leakage,REVIEW,"STEP 5: Feature REVIEW 12건, 시점 확인 필요"
+static_scan,BLOCKED,STEP 4: 공식 위험 예제의 critical/high 탐지 3건
+sandbox_and_package,REVIEW,"STEP 6: Sandbox REVIEW 9건, Package REVIEW 10건"
+human_approval,REVIEW,execution_approved = False

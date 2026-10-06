@@ -1,0 +1,13 @@
+﻿problem,feature,status,review_note
+regression,payment_method,REVIEW,예측 시점 가용성을 사람이 확인
+regression,order_month,REVIEW,예측 시점 가용성을 사람이 확인
+regression,order_dayofweek,REVIEW,예측 시점 가용성을 사람이 확인
+regression,gender,REVIEW,예측 시점 가용성을 사람이 확인
+regression,age,REVIEW,예측 시점 가용성을 사람이 확인
+regression,city,REVIEW,예측 시점 가용성을 사람이 확인
+classification,payment_method,REVIEW,예측 시점 가용성을 사람이 확인
+classification,item_count,REVIEW,주문 생성 시 상품 구성·수량·금액이 확정되어 있다는 교육용 가정 확인
+classification,total_quantity,REVIEW,주문 생성 시 상품 구성·수량·금액이 확정되어 있다는 교육용 가정 확인
+classification,order_amount,REVIEW,주문 생성 시 상품 구성·수량·금액이 확정되어 있다는 교육용 가정 확인
+classification,age,REVIEW,예측 시점 가용성을 사람이 확인
+classification,city,REVIEW,예측 시점 가용성을 사람이 확인
